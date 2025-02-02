@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monuments Management</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="js/products.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">XML RESTFul Monuments</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row mt-3">
+            <div class="col-md-1"></div>
+            <div class="col-sm-5 mb-3">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#monuments_show" id="show_all">Show all</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#monuments_create">Create</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active container" id="monuments_show">
+                       
+                    </div>
+                    <div class="tab-pane container" id="monuments_create">
+                        <form id="form-monument" class="mt-2">
+                            <div class="form-group">
+                                <label for="name">Monument Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" />
+                                <span id="error-name" style="display:none;">*field required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Monument Address:</label>
+                                <input type="text" class="form-control" id="address" name="address" />
+                                <span id="error-address" style="display:none;">*field required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Monument Description:</label>
+                                <textarea class="form-control" id="description" name="description"></textarea>
+                                <span id="error-description" style="display:none;">*field required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="latitude">Latitude:</label>
+                                <input type="text" class="form-control" id="latitude" name="latitude" />
+                                <span id="error-latitude" style="display:none;">*field required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="longitude">Longitude:</label>
+                                <input type="text" class="form-control" id="longitude" name="longitude" />
+                                <span id="error-longitude" style="display:none;">*field required</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-7 col-md-5">
+                <div class="jumbotron">
+                    <h1>NodeJS RESTFul Monuments Example</h1>
+                    <p>Simple example to show how to access a NodeJS RESTFul API using XML from JavaScript.</p>
+                    <p>In this example, you can list all monuments in the tab "Show all", and add new monuments by filling out the form and clicking "CREATE".</p>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</body>
+
+</html>

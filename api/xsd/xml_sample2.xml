@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monuments>
+  <Monument>
+    <Name>Statue of Liberty</Name>
+    <Address>New York, NY 10004, United States</Address>
+    <Description>A colossal neoclassical sculpture on Liberty Island in New York Harbor.</Description>
+    <Coordinates>
+      <Latitude>40.6892</Latitude>
+      <Longitude>-74.0445</Longitude>
+    </Coordinates>
+  </Monument>
+</Monuments>

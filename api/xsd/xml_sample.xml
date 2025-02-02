@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monuments>
+  <Monument>
+    <Name>Eiffel Tower</Name>
+    <Address>Champ de Mars, 5 Avenue Anatole</Address>
+    <Description>The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France.</Description>
+    <Coordinates>
+      <Latitude>48.8584</Latitude>
+      <Longitude>2.2945</Longitude>
+    </Coordinates>
+  </Monument>
+</Monuments>
